@@ -1,6 +1,6 @@
 ---
 # General
-dotfiles_repo: https://github.com/notthebee/dotfiles
+dotfiles_repo: https://github.com/manuelkarlin/dotfiles-fedora
 guid: 1000
 
 # SSH settings - https://github.com/geerlingguy/ansible-role-security
@@ -36,11 +36,7 @@ security_fail2ban_custom_configuration_template: "jail.local.j2"
 
 # Packages to install
 packages:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - software-properties-common
-  - gnupg-agent
+  - kitty 
   - iperf3
   - git
   - exa
@@ -51,7 +47,9 @@ packages:
   - speedtest-cli
   - python3
   - python3-pip
-  - mc
+
+flatpak_packages:
+  - brave
 
 # SMTP Email Notfication configuration
 email: manuelkarlin@yahoo.de

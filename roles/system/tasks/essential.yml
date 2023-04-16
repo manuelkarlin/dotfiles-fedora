@@ -1,6 +1,6 @@
 ---
 - name: Update packages
-  apt:
+  dnf:
     update_cache: yes
     upgrade: yes
     autoremove: yes

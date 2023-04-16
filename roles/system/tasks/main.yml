@@ -1,7 +1,8 @@
 ---
 - include_tasks: essential.yml
-- include_tasks: user.yml
-- include_tasks: autoupdate.yml
-- include_tasks: ssh.yml
-- include_tasks: fail2ban.yml
-- include_tasks: firewall.yml
+- include_tasks: hardening.yml
+# - include_tasks: user.yml
+# - include_tasks: autoupdate.yml
+# - include_tasks: ssh.yml
+# - include_tasks: fail2ban.yml
+# - include_tasks: firewall.yml
