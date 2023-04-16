@@ -1,0 +1,16 @@
+---
+hostname: fedora
+username: manuel
+shell: /bin/bash
+timezone: Europe/Berlin
+ntp_timezone: '{{ timezone }}'
+locale: en_US.UTF-8
+keyboard_layout: de
+
+# Docker settings
+# docker_dir: /opt/docker/data
+# docker_compose_dir: /opt/docker/compose
+# services:
+#  - homeassistant
+#  - photoprism
+#  - syncthing

@@ -1,0 +1,103 @@
+---
+- name: Firewall enable UFW & Set logging to On
+  ufw:
+    state: enabled
+    logging: 'on'
+
+- name: Firewall open SSH port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "22"
+    proto: tcp
+
+- name: Firewall open Portainer port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "9000"
+    proto: tcp
+
+- name: Firewall open Netdata local dashboard port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "19999"
+    proto: tcp
+
+- name: Firewall open Dashy port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "4001"
+    proto: tcp
+
+- name: Firewall open Unifi Controller HTTP port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "8080"
+    proto: tcp
+
+- name: Firewall open Unifi Controller HTTPS port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "8443"
+    proto: tcp
+
+- name: Firewall open Unifi Controller 3478 port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "3478"
+    proto: udp
+
+- name: Firewall open Unifi Controller 10001 port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "10001"
+    proto: udp
+
+- name: Firewall open Uptime Kuma port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "3001"
+    proto: tcp
+
+- name: Firewall open Vaultwarden port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "4743"
+    proto: tcp
+
+- name: Firewall open Jellyfin port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "8096"
+    proto: tcp
+
+- name: Firewall open Sonarr port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "8989"
+    proto: tcp
+
+- name: Firewall open Radarr port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "7878"
+    proto: tcp  
+
+- name: Firewall open Homeassistant port
+  ufw:
+    state: enabled
+    rule: allow
+    port: "8123"
+    proto: tcp
